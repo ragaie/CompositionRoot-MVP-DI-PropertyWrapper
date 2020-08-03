@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="CompositionRoot_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCn-65-xgS">
+                                <rect key="frame" x="136" y="438" width="142" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Show Detail Screen"/>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VUu-vj-mXb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copy Right (c), Ragaie Alfy 2020." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SJ-jv-Qqy">
+                                <rect key="frame" x="106.5" y="847" width="201" height="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compostion Root." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fl0-Ie-vZA">
+                                <rect key="frame" x="110.5" y="72" width="193" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Fl0-Ie-vZA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="6eI-bB-eiQ"/>
+                            <constraint firstItem="BCn-65-xgS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MDo-1L-nCW"/>
+                            <constraint firstItem="BCn-65-xgS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="TfY-Q7-h9e"/>
+                            <constraint firstItem="9SJ-jv-Qqy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Z6D-Hb-gSV"/>
+                            <constraint firstItem="Fl0-Ie-vZA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="puw-Tk-qrx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9SJ-jv-Qqy" secondAttribute="bottom" id="qF3-ti-GbX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378" y="149"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="9WL-An-gPm">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewControllerID" id="SLM-ho-B1z" customClass="DetailViewController" customModule="CompositionRoot_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="40e-QE-Vf0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5R-Wl-4vY">
+                                <rect key="frame" x="20" y="374" width="374" height="158"/>
+                                <string key="text">Thanks You for runing this demo.  nothing will apper in screen just go and check source code for composition root design pattern, peroperty wrabber and mvp design pattern.</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y5R-Wl-4vY" firstAttribute="centerY" secondItem="ZhK-Pp-EiY" secondAttribute="centerY" id="35Q-k4-IoO"/>
+                            <constraint firstItem="Y5R-Wl-4vY" firstAttribute="leading" secondItem="ZhK-Pp-EiY" secondAttribute="leading" constant="20" id="51O-sg-GfI"/>
+                            <constraint firstItem="Y5R-Wl-4vY" firstAttribute="trailing" secondItem="ZhK-Pp-EiY" secondAttribute="trailing" constant="-20" id="gI8-En-HNh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZhK-Pp-EiY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCP-fH-WTL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="150"/>
+        </scene>
+    </scenes>
+</document>
