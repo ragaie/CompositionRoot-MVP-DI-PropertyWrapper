@@ -1,7 +1,9 @@
 # Composition Root && DI 
 
 What we have here today composition Root design Pattern, also MVP design pattern and custom propertyWrapper of swift.
-YOU  with this property wrapper and composition root reduce your dependancies of your application, and keep you source code more native.
+
+With this property wrapper and composition root reduce your dependancies of your application, and keep you source code more native.
+You can replace Swinject/SwinjectStoryboard.
 
 ![Screenshot](https://github.com/ragaie/CompositionRoot-MVP-DI-PropertyWrapper/blob/master/CompositionRoot%26MVP/IMG_4641.JPG)
 
