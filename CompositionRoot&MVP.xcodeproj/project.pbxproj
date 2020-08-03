@@ -25,7 +25,18 @@
 		DFBD76B324D827C300220ADB /* RootComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD76B224D827C300220ADB /* RootComposer.swift */; };
 		DFBD76B624D838B800220ADB /* IMG_4641.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DFBD76B424D838B800220ADB /* IMG_4641.JPG */; };
 		DFBD76B724D838B800220ADB /* IMG_1078.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DFBD76B524D838B800220ADB /* IMG_1078.JPG */; };
+		DFBD76C024D851A000220ADB /* CompositionRoot_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD76BF24D851A000220ADB /* CompositionRoot_MVPTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFBD76C224D851A000220ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBD767D24D8154B00220ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBD768424D8154B00220ADB;
+			remoteInfo = "CompositionRoot&MVP";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DFBD768524D8154B00220ADB /* CompositionRoot&MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CompositionRoot&MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,10 +59,20 @@
 		DFBD76B224D827C300220ADB /* RootComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComposer.swift; sourceTree = "<group>"; };
 		DFBD76B424D838B800220ADB /* IMG_4641.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4641.JPG; sourceTree = "<group>"; };
 		DFBD76B524D838B800220ADB /* IMG_1078.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1078.JPG; sourceTree = "<group>"; };
+		DFBD76BD24D851A000220ADB /* CompositionRoot&MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CompositionRoot&MVPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBD76BF24D851A000220ADB /* CompositionRoot_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot_MVPTests.swift; sourceTree = "<group>"; };
+		DFBD76C124D851A000220ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DFBD768224D8154B00220ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD76BA24D851A000220ADB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,6 +87,7 @@
 			children = (
 				DFBD76B824D84F1900220ADB /* New Group */,
 				DFBD768724D8154B00220ADB /* CompositionRoot&MVP */,
+				DFBD76BE24D851A000220ADB /* CompositionRoot&MVPTests */,
 				DFBD768624D8154B00220ADB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				DFBD768524D8154B00220ADB /* CompositionRoot&MVP.app */,
+				DFBD76BD24D851A000220ADB /* CompositionRoot&MVPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +166,15 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		DFBD76BE24D851A000220ADB /* CompositionRoot&MVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFBD76BF24D851A000220ADB /* CompositionRoot_MVPTests.swift */,
+				DFBD76C124D851A000220ADB /* Info.plist */,
+			);
+			path = "CompositionRoot&MVPTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,6 +195,24 @@
 			productReference = DFBD768524D8154B00220ADB /* CompositionRoot&MVP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DFBD76BC24D851A000220ADB /* CompositionRoot&MVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBD76C424D851A000220ADB /* Build configuration list for PBXNativeTarget "CompositionRoot&MVPTests" */;
+			buildPhases = (
+				DFBD76B924D851A000220ADB /* Sources */,
+				DFBD76BA24D851A000220ADB /* Frameworks */,
+				DFBD76BB24D851A000220ADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFBD76C324D851A000220ADB /* PBXTargetDependency */,
+			);
+			name = "CompositionRoot&MVPTests";
+			productName = "CompositionRoot&MVPTests";
+			productReference = DFBD76BD24D851A000220ADB /* CompositionRoot&MVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +225,10 @@
 				TargetAttributes = {
 					DFBD768424D8154B00220ADB = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					DFBD76BC24D851A000220ADB = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = DFBD768424D8154B00220ADB;
 					};
 				};
 			};
@@ -192,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				DFBD768424D8154B00220ADB /* CompositionRoot&MVP */,
+				DFBD76BC24D851A000220ADB /* CompositionRoot&MVPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +261,13 @@
 				DFBD76B624D838B800220ADB /* IMG_4641.JPG in Resources */,
 				DFBD76B724D838B800220ADB /* IMG_1078.JPG in Resources */,
 				DFBD769024D8154B00220ADB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD76BB24D851A000220ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +294,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFBD76B924D851A000220ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBD76C024D851A000220ADB /* CompositionRoot_MVPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFBD76C324D851A000220ADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBD768424D8154B00220ADB /* CompositionRoot&MVP */;
+			targetProxy = DFBD76C224D851A000220ADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DFBD768E24D8154B00220ADB /* Main.storyboard */ = {
@@ -402,6 +480,44 @@
 			};
 			name = Release;
 		};
+		DFBD76C524D851A000220ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CompositionRoot&MVPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "R.A.CompositionRoot-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CompositionRoot&MVP.app/CompositionRoot&MVP";
+			};
+			name = Debug;
+		};
+		DFBD76C624D851A000220ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CompositionRoot&MVPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "R.A.CompositionRoot-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CompositionRoot&MVP.app/CompositionRoot&MVP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -419,6 +535,15 @@
 			buildConfigurations = (
 				DFBD769A24D8154C00220ADB /* Debug */,
 				DFBD769B24D8154C00220ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBD76C424D851A000220ADB /* Build configuration list for PBXNativeTarget "CompositionRoot&MVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBD76C524D851A000220ADB /* Debug */,
+				DFBD76C624D851A000220ADB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
