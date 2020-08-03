@@ -64,6 +64,7 @@
 		DFBD767C24D8154B00220ADB = {
 			isa = PBXGroup;
 			children = (
+				DFBD76B824D84F1900220ADB /* New Group */,
 				DFBD768724D8154B00220ADB /* CompositionRoot&MVP */,
 				DFBD768624D8154B00220ADB /* Products */,
 			);
@@ -133,6 +134,13 @@
 				DFBD76B224D827C300220ADB /* RootComposer.swift */,
 			);
 			path = "Copmostion Root component";
+			sourceTree = "<group>";
+		};
+		DFBD76B824D84F1900220ADB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
