@@ -18,12 +18,20 @@ class Dependencies {
     }
 
     func resolve<T>() -> T {
-        let key = String(describing: T.self)
+         let key = String(describing: T.self)
+        if objects[key] != nil {
+            guard let component: T = objects[key]  as? T else {
+                       fatalError("Dependency '\(T.self)' not resolved!")
+                   }
+            return component
+            
+        }
         
         guard let component: T = factories[key]?() as? T else {
             fatalError("Dependency '\(T.self)' not resolved!")
         }
         
+        objects[key] = component
         return component
     }
 }
